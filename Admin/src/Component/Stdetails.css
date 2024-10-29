@@ -1,0 +1,28 @@
+.form{
+    background-color: wheat;
+    margin: auto;
+    width: 80vw;
+    border-radius: 10px;
+    padding: 20px;
+}
+.h3{
+    color: black;
+}
+form{
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+  table{
+
+    text-align: start;
+    border-collapse: collapse;
+  }
+  th, td{
+      border: 1px solid black;
+      text-align: start;
+      padding: 8px;
+  }
+
+
