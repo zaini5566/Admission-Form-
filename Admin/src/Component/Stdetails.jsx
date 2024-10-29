@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Stdetails.css'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import axios from 'axios';
 
 const Stdetails = () => {
@@ -32,6 +32,7 @@ useEffect(() => {
  
   return (
    <div className='form'>
+    <Link to = "/">Back</Link>
     <h3 className='h3'>Student Admission Form</h3>
     <form action="" >
       <table>
