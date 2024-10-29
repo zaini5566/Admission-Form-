@@ -9,7 +9,7 @@ const Main = () => {
 const [student, setstudent] = useState([])
 useEffect(() => {
      const fetchdata = async () =>{
-        const responst = await axios.get("http://localhost:4000/api/getAll")
+        const responst = await axios.get("https://admission-form-1pxz.onrender.com/api/getAll")
         setstudent(responst.data)
      }
      fetchdata(); 

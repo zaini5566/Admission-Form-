@@ -20,7 +20,7 @@ const Stdetails = () => {
  const {id} = useParams(); 
 
 useEffect(() => {
-        axios.get(`http://localhost:4000/api/getOne/${id}`)
+        axios.get(`https://admission-form-1pxz.onrender.com/api/getOne/${id}`)
         .then((response)=>{
           setstudentuser(response.data)
           console.log(response)
