@@ -56,10 +56,10 @@ const Form = () => {
     setUser({...user, class: selectedClass, Monthlyfee: monthlyFee})
   };
 
-
+ 
   const submitform =async (e) =>{
     e.preventDefault(); 
-    await axios.post("http://localhost:4000/api/create", user )
+    await axios.post("https://admission-form-1pxz.onrender.com/api/create", user )
     .then((response) =>{
         console.log("Form Submited Sussfully")
         toast.success(response.data.msg || "Form Submited Successfully", {position:"top-right"})
