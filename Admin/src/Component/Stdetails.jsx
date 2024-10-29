@@ -32,8 +32,8 @@ useEffect(() => {
  
   return (
    <div className='form'>
-    <Link to = "/">Back</Link>
     <h3 className='h3'>Student Admission Form</h3>
+    <Link to = "/">Back</Link>
     <form action="" >
       <table>
         <tr>
