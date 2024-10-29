@@ -22,7 +22,7 @@ useEffect(() => {
             <th className="table-header">Sr.no</th>
             <th className="table-header">Student Name</th>
             <th className="table-header">Class</th>
-            <th className="table-header">Address</th>
+            {/* <th className="table-header">Address</th> */}
             <th className="table-header">Details</th>
         </tr>
         {
@@ -32,7 +32,7 @@ useEffect(() => {
                     <td className="table-cell">{index + 1}</td>
                     <td className="table-cell">{studenti.fname} {studenti.lname}</td>
                     <td className="table-cell">{studenti.class}</td>
-                    <td className="table-cell">{studenti.Address}</td>
+                    {/* <td className="table-cell">{studenti.Address}</td> */}
                     <td className="table-cell"><Link to={`/Stdetail/${studenti._id}`}><button>Details</button> </Link></td>
                 </tr>
                 )
