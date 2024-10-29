@@ -3,18 +3,17 @@ import mongoose from "mongoose"
 import bodyParser from "body-parser"
 import cors from "cors"
 import route from "./Routes/stroutter.js";
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 
 const app = express()
  app.use(bodyParser.json());
  app.use(cors());
 
-const port = process.env.PORT || 4000;
-const dbUri = process.env.DB_URI;
+const port =  4000;
 
-mongoose.connect(dbUri).then(()=>{
+
+mongoose.connect("mongodb+srv://zain:zain5566g@crudapp.th5st.mongodb.net/CrudApp?retryWrites=true&w=majority&appName=CrudApp").then(()=>{
     console.log("DB Connect Successfully")
 }).catch((error) => {
     console.log(error)
