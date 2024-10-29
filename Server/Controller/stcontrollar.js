@@ -19,11 +19,13 @@ export const getAll = async (req, res) =>{
     try{
        const stdata = await Student.find(); 
        if(!stdata){
-        return res.status(404).json({msg:"Student not fount"})
+        return res.status(404).json({msg:"Student not fount"}),
+        console.log("Db COnnected")
        }
        res.status(200).json(stdata);
     } catch (error){
         res.status(500).json({error: error}); 
+        console.log("Db Not Conected")
     }
 }
 
