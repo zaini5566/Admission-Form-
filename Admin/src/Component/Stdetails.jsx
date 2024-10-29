@@ -3,6 +3,7 @@ import './Stdetails.css'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios';
 
+
 const Stdetails = () => {
 
   const studentdata = {
@@ -29,7 +30,6 @@ useEffect(() => {
         })
 }, [id])
 
- 
   return (
    <div className='form'>
     <Link to = "/">Back</Link>

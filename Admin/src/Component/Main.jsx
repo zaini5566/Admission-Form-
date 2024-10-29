@@ -33,7 +33,7 @@ useEffect(() => {
                     <td className="table-cell">{studenti.fname} {studenti.lname}</td>
                     <td className="table-cell">{studenti.class}</td>
                     <td className="table-cell">{studenti.Address}</td>
-                    <td className="table-cell"><Link to={`/stdetail/${studenti._id}`}><button>Details</button> </Link></td>
+                    <td className="table-cell"><Link to={`/Stdetail/${studenti._id}`}><button>Details</button> </Link></td>
                 </tr>
                 )
             })
